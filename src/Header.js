@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPrint } from '@fortawesome/free-solid-svg-icons';
+import { faPrint, faLanguage } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
     const NavWrapper = styled.div`
@@ -29,15 +29,26 @@ const Header = () => {
         <NavWrapper>
             <Nav>
                 <NavTitle>Wan Hsuan Lee</NavTitle>
-                <a href="#">
-                    <FontAwesomeIcon
-                        icon={faPrint}
-                        style={{
-                            color: '#666666',
-                            marginRight: '6px',
-                        }}
-                    />
-                </a>
+                <span>
+                    <a href="#">
+                        <FontAwesomeIcon
+                            icon={faLanguage}
+                            style={{
+                                color: '#666666',
+                                marginRight: '10px',
+                            }}
+                        />
+                    </a>
+                    <a href="#">
+                        <FontAwesomeIcon
+                            icon={faPrint}
+                            style={{
+                                color: '#666666',
+                                marginRight: '10px',
+                            }}
+                        />
+                    </a>
+                </span>
             </Nav>
         </NavWrapper>
     );

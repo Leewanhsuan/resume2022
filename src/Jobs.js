@@ -22,7 +22,7 @@ const Jobs = () => {
                 <h2>工作經歷</h2>
                 <div>
                     <div>
-                        <h3 class="job-title">數位行銷</h3>
+                        <h3>數位行銷</h3>
                         <Company>
                             <FontAwesomeIcon
                                 icon={faBuilding}

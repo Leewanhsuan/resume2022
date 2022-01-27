@@ -41,6 +41,7 @@ const Personal = () => {
 
     const Description = styled.div`
         margin-bottom: 20px;
+        font-size: 14px;
     `;
 
     return (
@@ -52,7 +53,7 @@ const Personal = () => {
                 />
             </Avatar>
             <Title>李婉瑄 Sandy</Title>
-            <HighLight>前端工程師｜營運思維｜設計能力</HighLight>
+            <HighLight>從與工程師合作到成為一名工程師，不變的是保有一顆好奇的心</HighLight>
             <SocialMedia>
                 <MediaLink href="https://www.linkedin.com/in/wanhsuanlee/" target="_blank">
                     <FontAwesomeIcon
@@ -96,7 +97,13 @@ const Personal = () => {
                 </MediaLink>
             </SocialMedia>
             <Description>
-                我是婉瑄，是一個具備營運思維與平面設計能力的前端工程師！過去曾在金融科技新創公司擔任行銷，與前端工程師合作完成過各式各樣的專案，發現自己對於能夠成為建築專案的角色很感興趣，因而開始接觸網頁開發領域。比起將產品推廣給使用者的數位行銷，更熱衷在完成各種專案的帶給我的成就！
+                擁有三年的行銷與平面設計能力，過去在 FinTech
+                新創擔任行銷，與前端工程師、PM、設計一同合作完成多項專案。發現自己對於專案如何從 0
+                到有的建造過程深感興趣，因而開始接觸網頁開發領域。 <br />
+                <br />
+                2021 10月開始全職投入學習，報名了 AlphaCamp 線上課程、參加六角學院 F2E 挑戰賽、自學 React Hook，並參加
+                Clean Code 技術讀書會。樂於學習新的前端技術，在 debug
+                過程中越挫越勇，期待未來持續創造各種讓網頁變得更好的可能性。
             </Description>
         </div>
     );

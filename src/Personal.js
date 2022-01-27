@@ -11,7 +11,7 @@ const Personal = () => {
 
     const Image = styled.img`
         border-radius: 50%;
-        width: 120px;
+        width: 130px;
     `;
 
     const Title = styled.h1`
@@ -36,7 +36,7 @@ const Personal = () => {
         text-align: center;
         font-size: 16px;
         letter-space: 2px;
-        color: #0abbb5;
+        color: #4169e1;
     `;
 
     const Description = styled.div`
@@ -47,10 +47,7 @@ const Personal = () => {
     return (
         <div>
             <Avatar>
-                <Image
-                    src="https://hsuanxcollection.files.wordpress.com/2021/09/personal-img.jpg?resize=320,320"
-                    alt=""
-                />
+                <Image src={require(`./image/photo.png`)} alt="" />
             </Avatar>
             <Title>李婉瑄 Sandy</Title>
             <HighLight>從與工程師合作到成為一名工程師，不變的是保有一顆好奇的心</HighLight>

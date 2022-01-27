@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import './style.css';
+import { device } from './device';
 
 const Skills = () => {
     const SkillWrapper = styled.div`
@@ -9,14 +10,22 @@ const Skills = () => {
     const SkillAll = styled.div`
         display: flex;
         justify-content: space-between;
+
+        @media ${device.mobile} {
+            flex-wrap: wrap;
+        }
     `;
 
     const Skill = styled.div`
         width: 30%;
+
+        @media ${device.mobile} {
+            width: 100%;
+        }
     `;
 
     const SkillTitle = styled.h3`
-        border-top: 1px solid #8bd2c2;
+        border-top: 1px solid #4169e1;
         padding-top: 16px;
     `;
 

@@ -9,13 +9,13 @@ const Jobs = () => {
     `;
 
     const Company = styled.span`
-        color: #666666;
+        color: #4169e1;
         font-size: 16px;
         margin-right: 20px;
     `;
 
     const Duration = styled.span`
-        color: #666666;
+        color: #4169e1;
         font-size: 16px;
         margin-right: 20px;
     `;

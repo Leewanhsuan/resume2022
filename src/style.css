@@ -5,10 +5,8 @@ body {
     padding: 0;
     color: #333333;
     background-color: #f6f7f8;
-}
-
-@page {
-    size: A4
+    height: auto;
+    overflow: scroll;
 }
 
 h2 {
@@ -33,6 +31,6 @@ P {
 hr {
     border: 0px;
     height: 1px;
-    background: #8bd2c2;
+    background: #4169e1;
     margin: 20px 0;
 }

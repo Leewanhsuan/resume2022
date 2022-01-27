@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import './style.css';
+import { device } from './device';
 
 const Project = () => {
     const ProjectWrapper = styled.div`
@@ -9,27 +10,42 @@ const Project = () => {
     const ProjectInro = styled.div`
         display: flex;
         justify-content: space-between;
+        @media ${device.mobile} {
+            flex-wrap: wrap;
+        }
     `;
 
     const ProjectDetail = styled.div`
         width: 60%;
+
+        @media ${device.mobile} {
+            width: 100%;
+        }
     `;
 
     const ProjectSkill = styled.div`
         width: 30%;
+        @media ${device.mobile} {
+            width: 100%;
+        }
     `;
 
     const ProjectTitle = styled.p`
-        border-top: 1px solid #8bd2c2;
+        border-top: 1px solid #4169e1;
         padding-top: 16px;
         font-size: 18px;
-        font-weight: 500;
-        color: #75b0a2;
+        color: #4169e1;
     `;
 
-    const IntroTitle = styled.h3``;
-
-    const Link = styled.button``;
+    const Link = styled.button`
+        border: none;
+        margin-right: 5px;
+        border-radius: 5px;
+        &: hover {
+            color: white;
+            background-color: #4169e1;
+        }
+    `;
 
     return (
         <ProjectWrapper>
@@ -37,19 +53,18 @@ const Project = () => {
             <ProjectTitle>FlowerMe 心花開 電商網站</ProjectTitle>
             <ProjectInro>
                 <ProjectDetail>
-                    <p>
-                        具備網頁設計能力，熟悉
-                        CSS、HTML、Javascript，能完成使用者介面繪製，對於基礎演算法有一定的掌握力。
-                    </p>
                     <Link href="#" className="payment__button">
                         完整作品集
                     </Link>
                     <Link href="#" className="payment__button">
-                        網站連結
+                        網站 Demo
                     </Link>
+                    <p>
+                        具備網頁設計能力，熟悉
+                        CSS、HTML、Javascript，能完成使用者介面繪製，對於基礎演算法有一定的掌握力。
+                    </p>
                 </ProjectDetail>
                 <ProjectSkill>
-                    <IntroTitle>使用技術</IntroTitle>
                     <p>
                         具備網頁設計能力，熟悉
                         CSS、HTML、Javascript，能完成使用者介面繪製，對於基礎演算法有一定的掌握力。

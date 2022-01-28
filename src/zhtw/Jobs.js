@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBuilding, faClock } from '@fortawesome/free-solid-svg-icons';
 

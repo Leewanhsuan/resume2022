@@ -47,7 +47,7 @@ const Personal = () => {
     return (
         <div>
             <Avatar>
-                <Image src={require(`./image/photo.png`)} alt="" />
+                <Image src={require(`./../image/photo.png`)} alt="" />
             </Avatar>
             <Title>李婉瑄 Sandy</Title>
             <HighLight>從與工程師合作到成為一名工程師，不變的是保有一顆好奇的心</HighLight>

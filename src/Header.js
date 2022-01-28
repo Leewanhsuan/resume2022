@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPrint, faLanguage } from '@fortawesome/free-solid-svg-icons';
+import { faPrint } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const NavWrapper = styled.div`
@@ -30,15 +31,8 @@ const Header = () => {
             <Nav>
                 <NavTitle>Wan Hsuan Lee</NavTitle>
                 <span>
-                    <a href="#">
-                        <FontAwesomeIcon
-                            icon={faLanguage}
-                            style={{
-                                color: '#666666',
-                                marginRight: '10px',
-                            }}
-                        />
-                    </a>
+                    <Link to="/">中</Link>
+                    <Link to="/en">EN</Link>
                     <a href="#">
                         <FontAwesomeIcon
                             icon={faPrint}

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -46,10 +45,7 @@ const Personal = () => {
 
     return (
         <div>
-            <Avatar>
-                <Image src={require(`./image/photo.png`)} alt="" />
-            </Avatar>
-            <Title>李婉瑄 Sandy</Title>
+            <Title>Wan Hsuan Lee (Sandy)</Title>
             <HighLight>從與工程師合作到成為一名工程師，不變的是保有一顆好奇的心</HighLight>
             <SocialMedia>
                 <MediaLink href="https://www.linkedin.com/in/wanhsuanlee/" target="_blank">

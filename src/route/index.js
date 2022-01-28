@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Main from '@zhtw/Main';
+import MainZh from '../zhtw/index';
+import MainEn from '../enus/index';
 
 const RouteConfig = () => {
     return (
         <Routes>
-            <Route path="/zh" element={<Main />}></Route>
-            <Route path="/en" element={<Main />}></Route>
+            <Route path="/" element={<MainZh />}></Route>
+            <Route path="/en" element={<MainEn />}></Route>
         </Routes>
     );
 };

@@ -1,11 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './style.css';
+import styled from 'styled-components';
+import Personal from './Personal';
+import Skills from './Skills';
+import Project from './Project';
+import Jobs from './Jobs';
+import Education from './Education';
+import Header from '../Header';
 
-ReactDOM.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>,
-    document.getElementById('root')
-);
+const MainZh = () => {
+    const Main = styled.main`
+        max-width: 780px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    `;
+
+    return (
+        <Main>
+            <Personal />
+            <Skills />
+            <Project />
+            <Jobs />
+            <Education />
+        </Main>
+    );
+};
+
+export default MainZh;

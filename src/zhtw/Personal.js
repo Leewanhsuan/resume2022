@@ -52,7 +52,6 @@ const Personal = () => {
         text-align: center;
         @media print ${device.print} {
             text-align: start;
-            font-size: 18px;
             width: 45%;
         }
     `;
@@ -62,6 +61,10 @@ const Personal = () => {
         text-decoration: none;
         margin: 0 10px;
         display: inline-block;
+        @media print ${device.print} {
+            text-align: start;
+            font-size: 14px;
+        }
     `;
 
     const Description = styled.p`

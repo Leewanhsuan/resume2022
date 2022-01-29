@@ -27,3 +27,74 @@ section {
 P {
     color: #666666;
 }
+
+@page {
+    size: A4 portrait;
+    margin: 0.5cm;
+    orphans: 4;
+    widows: 2;
+
+}
+
+
+
+
+@media print {
+
+    html,
+    body {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    body {
+        width: 100%;
+        margin: 0;
+        float: none;
+        line-height: 1.5;
+        font-size: 12pt;
+    }
+
+    header nav,
+    footer,
+    video,
+    audio,
+    object,
+    embed {
+        display: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        page-break-after: avoid;
+        page-break-inside: avoid
+    }
+
+    h1+p,
+    h2+p,
+    h3+p {
+        page-break-before: avoid;
+    }
+
+    img {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+        max-width: 100%;
+    }
+
+    ul,
+    ol,
+    dl {
+        page-break-before: avoid;
+    }
+
+    div.pageBlock {
+        page-break-before: always;
+    }
+}

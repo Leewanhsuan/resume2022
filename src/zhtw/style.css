@@ -47,3 +47,91 @@ a:hover {
     color: #4169e1;
     cursor: pointer;
 }
+
+@media print {
+
+    html,
+    body {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    body {
+        width: 100%;
+        margin: 0;
+        float: none;
+        line-height: 1.5;
+        font-size: 12pt;
+    }
+
+    header nav,
+    footer,
+    video,
+    audio,
+    object,
+    embed {
+        display: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        page-break-after: avoid;
+        page-break-inside: avoid
+    }
+
+    h1+p,
+    h2+p,
+    h3+p {
+        page-break-before: avoid;
+    }
+
+    a:link,
+    a:visited,
+    a {
+        page-break-inside: avoid;
+        background: transparent;
+        color: #222;
+        font-weight: bold;
+        text-decoration: underline;
+        text-align: left;
+        word-wrap: break-word;
+        /*避免網址過長超出頁面*/
+    }
+
+    a[href^="http://"]:after,
+    a[href^="https://"]:after {
+        content: " ("attr(href) ") ";
+    }
+
+    img {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+        max-width: 100%;
+    }
+
+    table,
+    blockquote {
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+        /* 表格即使分頁也會顯示表頭 */
+    }
+
+    ul,
+    ol,
+    dl {
+        page-break-before: avoid;
+    }
+
+    div.pageBlock {
+        page-break-before: always;
+    }
+}

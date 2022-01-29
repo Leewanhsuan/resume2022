@@ -1,17 +1,23 @@
 import styled from 'styled-components';
 import './style.css';
+import { device } from './device';
 
 const Education = () => {
     const Major = styled.span`
         color: #666666;
         font-size: 16px;
         margin-right: 20px;
+        @media print ${device.print} {
+            font-size: 14px;
+        }
     `;
 
     const Duration = styled.span`
         color: #666666;
         font-size: 16px;
-        margin-right: 20px;
+        @media print ${device.print} {
+            font-size: 14px;
+        }
     `;
 
     const Educate = styled.section`

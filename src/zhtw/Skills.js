@@ -12,17 +12,17 @@ const Skills = () => {
         @media ${device.mobile} {
             flex-wrap: wrap;
         }
-
-        @media print ${device.print} {
-            margin: 0.75in;
-        }
     `;
 
     const Skill = styled.div`
         width: 25%;
 
+        @media print ${device.print} {
+            width: 40px;
+        }
+
         @media ${device.mobile} {
-            width: 100%;
+            width: 90%;
         }
     `;
 

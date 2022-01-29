@@ -16,10 +16,10 @@ const MainZh = () => {
     return (
         <Main>
             <Personal />
+            <Education />
+            <Jobs />
             <Skills />
             <Project />
-            <Jobs />
-            <Education />
         </Main>
     );
 };

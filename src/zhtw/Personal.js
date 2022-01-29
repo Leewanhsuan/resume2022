@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -94,13 +93,12 @@ const Personal = () => {
                 </MediaLink>
             </SocialMedia>
             <Description>
-                擁有三年的行銷與平面設計能力，過去在 FinTech
-                新創擔任行銷，與前端工程師、PM、設計一同合作完成多項專案。發現自己對於專案如何從 0
-                到有的建造過程深感興趣，因而開始接觸網頁開發領域。 <br />
+                曾在金融新創擔任產品行銷負責人，擁有三年的產品行銷與設計經驗，過程經常與產品前端工程師、後端工程師、產品經理等共同完成產品需求，進而發現自己對於產品整體建構過程深感興趣，因而開始邁向軟體工程師領域。
                 <br />
-                2021 10月開始全職投入學習，報名了 AlphaCamp 線上課程、參加六角學院 F2E 挑戰賽、自學 React Hook，並參加
-                Clean Code 技術讀書會。樂於學習新的前端技術，在 debug
-                過程中越挫越勇，期待未來持續創造各種讓網頁變得更好的可能性。
+                <br />
+                2021/10 開始全職投入學習，報名 AlphaCamp 前端工程師培訓課程、參加六角學院 F2E 前端開發挑戰賽、自學 React
+                Hook 與練習開發 Side Project、參加前端技術讀書會，在過程中不斷的學習新知、在解決問題以及 Debug
+                過程中越挫越勇，享受解決後帶來成就感的滋味，期待 2022 年踏入軟體開發之路。
             </Description>
         </div>
     );

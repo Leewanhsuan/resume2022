@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBuilding, faClock } from '@fortawesome/free-solid-svg-icons';
 
@@ -54,7 +53,6 @@ const Jobs = () => {
                         </ul>
                     </div>
                     <div>
-                        <hr />
                         <h3>品牌行銷</h3>
                         <Company>EXP 創璟國際品牌顧問公司</Company>
                         <Duration>2018 年 10 月 - 2020 年 3 月</Duration>

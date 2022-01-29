@@ -1,11 +1,8 @@
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBuilding, faClock } from '@fortawesome/free-solid-svg-icons';
+import './style.css';
 
 const Jobs = () => {
-    const JobWrapper = styled.div`
-        padding-top: 20px;
-    `;
+    const JobWrapper = styled.div``;
 
     const Company = styled.span`
         color: #4169e1;
@@ -14,7 +11,7 @@ const Jobs = () => {
     `;
 
     const Duration = styled.span`
-        color: #4169e1;
+        color: #666666;
         font-size: 16px;
         margin-right: 20px;
     `;
@@ -63,7 +60,7 @@ const Jobs = () => {
                                 架設網頁、重構網頁架構、提升網站運作效能，並優化 SEO 與使用者體驗
                             </List>
                             <List>
-                                透過產業研究、市場調查、企業訪談與消費者深度訪談等研究方法，協助客戶解析市場與擬定品牌操ㄌ略，擔任專案負責人，專案績效年成長
+                                透過產業研究、市場調查、企業訪談與消費者深度訪談等研究方法，協助客戶解析市場與擬定品牌策略，擔任專案負責人，專案績效年成長
                                 5%
                             </List>
                         </ul>

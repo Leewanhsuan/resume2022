@@ -33,15 +33,6 @@ const Header = () => {
                 <span>
                     <Link to="/">中</Link>
                     <Link to="/en">EN</Link>
-                    <a href="#">
-                        <FontAwesomeIcon
-                            icon={faPrint}
-                            style={{
-                                color: '#666666',
-                                marginRight: '10px',
-                            }}
-                        />
-                    </a>
                 </span>
             </Nav>
         </NavWrapper>

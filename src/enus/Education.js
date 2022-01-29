@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSchool, faClock } from '@fortawesome/free-solid-svg-icons';
 
@@ -26,7 +25,6 @@ const Education = () => {
                         <Duration>2020 年 4 月 - 2021 年 10 月</Duration>
                     </div>
                     <div>
-                        <hr />
                         <h3>國立臺北教育大學</h3>
                         <Major>文化創意產業經營系</Major>
                         <Duration>2020 年 4 月 - 2021 年 10 月</Duration>

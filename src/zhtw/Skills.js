@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 import { device } from './device';
+import './style.css';
 
 const Skills = () => {
-    const SkillWrapper = styled.div`
-        padding-top: 20px;
-    `;
+    const SkillWrapper = styled.div``;
 
     const SkillAll = styled.div`
         display: flex;
@@ -13,10 +12,14 @@ const Skills = () => {
         @media ${device.mobile} {
             flex-wrap: wrap;
         }
+
+        @media print ${device.print} {
+            margin: 0.75in;
+        }
     `;
 
     const Skill = styled.div`
-        width: 30%;
+        width: 25%;
 
         @media ${device.mobile} {
             width: 100%;
@@ -24,7 +27,6 @@ const Skills = () => {
     `;
 
     const SkillTitle = styled.h3`
-        border-top: 1px solid #4169e1;
         padding-top: 16px;
     `;
 
@@ -36,31 +38,51 @@ const Skills = () => {
     return (
         <SkillWrapper>
             <h2>專業技能</h2>
+            <hr />
             <SkillAll>
                 <Skill>
-                    <SkillTitle>網頁基礎設計</SkillTitle>
-                    <ol>
-                        <List>熟悉 CSS、HTML 語法，能獨立完成切版與 RWD</List>
-                        <List>熟悉 Sass 預處理器，具備 Bootstrap 切版經驗</List>
-                        <List>熟悉 ES6 JS 語法，能以非同步技術串接 API，完成網頁資料與畫面的交互呈現</List>
-                    </ol>
+                    <SkillTitle>前端設計</SkillTitle>
+                    <ul>
+                        <List>HTML</List>
+                        <List>CSS、SaSS</List>
+                        <List>JavaScript ES6</List>
+                        <List>RESTful APIs</List>
+                        <List>Bootstrap</List>
+                        <List>Style-Component（CSS in JS）</List>
+                    </ul>
                 </Skill>
                 <Skill>
-                    <SkillTitle>前端框架</SkillTitle>
-                    <ol>
-                        <List>熟悉 React Hooks，使用 Styled-Component、React Router</List>
-                        <List>了解 Redux、React DOM 等基礎觀念</List>
-                    </ol>
+                    <SkillTitle>前端技術</SkillTitle>
+                    <ul>
+                        <List>React Hooks </List>
+                        <List>Redux and React Router</List>
+                        <List>RESTful APIs</List>
+                        <List>JEST Unit Test</List>
+                        <List>Map</List>
+                    </ul>
                 </Skill>
                 <Skill>
-                    <SkillTitle>相關能力</SkillTitle>
-                    <ol>
-                        <List>熟悉 Git 版本控制，SourceTree 使用經驗 </List>
-                        <List>具備雲端運算平台基本知識，包含 AWS、GCP、Azure</List>
-                        <List>曾使用過 JEST 單元測試、了解爬蟲機制</List>
-                        <List>具備後端與資料庫等基礎知識</List>
-                        <List>了解網頁成效追蹤與分析，包含 GA4、SEO 等</List>
-                    </ol>
+                    <SkillTitle>開發工具</SkillTitle>
+                    <ul>
+                        <List>Git</List>
+                        <List>Chrome DevTools</List>
+                        <List>SourceTree</List>
+                        <List>Basic knowledge in Cloud（AWS、GCP）</List>
+                        <List>VS Code</List>
+                        <List>Webpack</List>
+                        <List>Terminal</List>
+                        <List>ResponsivelyApp</List>
+                    </ul>
+                </Skill>
+                <Skill>
+                    <SkillTitle>行銷設計</SkillTitle>
+                    <ul>
+                        <List>Google Analytics、Google Search Console </List>
+                        <List>Firebase、Google Data Studio</List>
+                        <List>SEO、Google Ads、App Search、Facebook Ads、Line LAP</List>
+                        <List>Figma、Whimsical</List>
+                        <List>Adobe Ai、PS</List>
+                    </ul>
                 </Skill>
             </SkillAll>
         </SkillWrapper>

@@ -2,32 +2,36 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { device } from './device';
+import './style.css';
 
 const Personal = () => {
     const Avatar = styled.div`
         text-align: center;
+        @media print ${device.print} {
+            text-align: start;
+            width: 15%;
+        }
     `;
 
     const Image = styled.img`
         border-radius: 50%;
         width: 130px;
+        @media print ${device.print} {
+            width: 100px;
+            margin-right: 50px;
+        }
     `;
 
     const Title = styled.h1`
         text-align: center;
         font-size: 30px;
         margin: 20px 0;
-    `;
-
-    const SocialMedia = styled.div`
-        margin-bottom: 20px;
-        text-align: center;
-    `;
-
-    const MediaLink = styled.a`
-        color: #666666;
-        text-decoration: none;
-        margin: 0 10px;
+        @media print ${device.print} {
+            text-align: start;
+            margin: 0;
+            font-size: 22px;
+        }
     `;
 
     const HighLight = styled.div`
@@ -36,62 +40,112 @@ const Personal = () => {
         font-size: 16px;
         letter-space: 2px;
         color: #4169e1;
+        @media print ${device.print} {
+            text-align: start;
+            font-size: 14px;
+            margin-bottom: 0px;
+        }
     `;
 
-    const Description = styled.div`
+    const SocialMedia = styled.div`
         margin-bottom: 20px;
-        font-size: 14px;
+        text-align: center;
+        @media print ${device.print} {
+            text-align: start;
+            font-size: 18px;
+            width: 45%;
+        }
+    `;
+
+    const MediaLink = styled.a`
+        color: #666666;
+        text-decoration: none;
+        margin: 0 10px;
+        display: inline-block;
+    `;
+
+    const Description = styled.p`
+        margin-bottom: 20px;
+        font-size: 16px;
+        @media print ${device.print} {
+            font-size: 14px;
+        }
+    `;
+
+    const TopInfo = styled.div`
+        @media print ${device.print} {
+            display: flex;
+        }
+    `;
+
+    const Name = styled.div`
+        @media print ${device.print} {
+            width: 45%;
+            margin-left: 20px;
+        }
     `;
 
     return (
         <div>
-            <Avatar>
-                <Image src={require(`./../image/photo.png`)} alt="" />
-            </Avatar>
-            <Title>李婉瑄 Sandy</Title>
-            <HighLight>從與工程師合作到成為一名工程師，不變的是保有一顆好奇的心</HighLight>
-            <SocialMedia>
-                <MediaLink href="https://www.linkedin.com/in/wanhsuanlee/" target="_blank">
-                    <FontAwesomeIcon
-                        icon={faLinkedin}
-                        style={{
-                            color: '#666666',
-                            marginRight: '6px',
-                        }}
-                    />
-                    wanhsuanlee
-                </MediaLink>
-                <MediaLink href="https://github.com/Leewanhsuan?tab=projects" target="_blank">
-                    <FontAwesomeIcon
-                        icon={faGithub}
-                        style={{
-                            color: '#666666',
-                            marginRight: '6px',
-                        }}
-                    />
-                    Leewanhsuan
-                </MediaLink>
-                <MediaLink href="tel:0912882877" target="_blank">
-                    <FontAwesomeIcon
-                        icon={faPhone}
-                        style={{
-                            color: '#666666',
-                            marginRight: '6px',
-                        }}
-                    />
-                    0912882877
-                </MediaLink>
-                <MediaLink href="mailto:awanwan940204@gmail.com" target="_blank">
-                    <FontAwesomeIcon
-                        icon={faEnvelope}
-                        style={{
-                            color: '#666666',
-                            marginRight: '6px',
-                        }}
-                    />
-                    awanwan940204@gmail.com
-                </MediaLink>
-            </SocialMedia>
+            <TopInfo>
+                <Avatar>
+                    <Image src={require(`./../image/photo.png`)} alt="" />
+                </Avatar>
+                <Name>
+                    <Title>李婉瑄 Sandy</Title>
+                    <HighLight>從與工程師合作到成為一名工程師，不變的是保有一顆好奇的心</HighLight>
+                </Name>
+                <SocialMedia>
+                    <MediaLink href="https://www.linkedin.com/in/wanhsuanlee/" target="_blank">
+                        <div>
+                            <FontAwesomeIcon
+                                icon={faLinkedin}
+                                style={{
+                                    color: '#666666',
+                                    marginRight: '6px',
+                                }}
+                            />
+                            wanhsuanlee
+                        </div>
+                    </MediaLink>
+                    <MediaLink href="https://github.com/Leewanhsuan?tab=projects" target="_blank">
+                        <div>
+                            <FontAwesomeIcon
+                                icon={faGithub}
+                                style={{
+                                    color: '#666666',
+                                    marginRight: '6px',
+                                }}
+                            />
+                            Leewanhsuan
+                        </div>
+                    </MediaLink>
+                    <MediaLink href="tel:0912882877" target="_blank">
+                        <div>
+                            <FontAwesomeIcon
+                                icon={faPhone}
+                                style={{
+                                    color: '#666666',
+                                    marginRight: '6px',
+                                }}
+                            />
+                            0912882877
+                        </div>
+                    </MediaLink>
+                    <MediaLink href="mailto:awanwan940204@gmail.com" target="_blank">
+                        <div>
+                            <FontAwesomeIcon
+                                icon={faEnvelope}
+                                style={{
+                                    color: '#666666',
+                                    marginRight: '6px',
+                                }}
+                            />
+                            awanwan940204@gmail.com
+                        </div>
+                    </MediaLink>
+                </SocialMedia>
+            </TopInfo>
             <Description>
                 曾在金融新創擔任產品行銷負責人，擁有三年的產品行銷與設計經驗，過程經常與產品前端工程師、後端工程師、產品經理等共同完成產品需求，進而發現自己對於產品整體建構過程深感興趣，因而開始邁向軟體工程師領域。
                 <br />

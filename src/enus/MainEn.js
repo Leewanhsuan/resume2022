@@ -4,7 +4,6 @@ import Skills from './Skills';
 import Project from './Project';
 import Jobs from './Jobs';
 import Education from './Education';
-import './style.css';
 
 const MainEn = () => {
     const MainWrapper = styled.div`

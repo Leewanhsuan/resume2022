@@ -1,11 +1,9 @@
 import styled from 'styled-components';
-import './style.css';
 import { device } from './device';
+import './style.css';
 
 const Project = () => {
-    const ProjectWrapper = styled.div`
-        padding-top: 20px;
-    `;
+    const ProjectWrapper = styled.div``;
 
     const ProjectInro = styled.div`
         display: flex;
@@ -31,7 +29,6 @@ const Project = () => {
     `;
 
     const ProjectTitle = styled.p`
-        border-top: 1px solid #4169e1;
         padding-top: 16px;
         font-size: 18px;
         color: #4169e1;
@@ -50,6 +47,7 @@ const Project = () => {
     return (
         <ProjectWrapper>
             <h2>程式作品</h2>
+            <hr />
             <ProjectTitle>FlowerMe 心花開 電商網站</ProjectTitle>
             <ProjectInro>
                 <ProjectDetail>

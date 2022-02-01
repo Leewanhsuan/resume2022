@@ -44,29 +44,44 @@ const Project = () => {
         }
     `;
 
+    const Image = styled.img`
+        width: 420px;
+    `;
+
+    const List = styled.li`
+        margin-bottom: 5px;
+        font-size: 14px;
+    `;
+
     return (
         <ProjectWrapper>
             <h2>程式作品</h2>
             <hr />
-            <ProjectTitle>FlowerMe 心花開 電商網站</ProjectTitle>
+
             <ProjectInro>
                 <ProjectDetail>
-                    <Link href="#" className="payment__button">
-                        完整作品集
-                    </Link>
-                    <Link href="#" className="payment__button">
-                        網站 Demo
-                    </Link>
+                    <ProjectTitle>FlowerMe 心花開 電商網站</ProjectTitle>
                     <p>
-                        具備網頁設計能力，熟悉
-                        CSS、HTML、Javascript，能完成使用者介面繪製，對於基礎演算法有一定的掌握力。
+                        電商前台涵蓋會員、購物、訂單、評論與客服等四大功能，後台則包含會員管理、品類管理、商品管理、訂單管理、消息發布等五大模組。
                     </p>
+                    <a href="#">
+                        <Image src={require(`./../image/FlowerMePhoto.png`)} alt="" />
+                    </a>
+                    <Link href="#">完整作品說明</Link>
+                    <Link href="#">網站 Demo</Link>
                 </ProjectDetail>
                 <ProjectSkill>
-                    <p>
-                        具備網頁設計能力，熟悉
-                        CSS、HTML、Javascript，能完成使用者介面繪製，對於基礎演算法有一定的掌握力。
-                    </p>
+                    <ProjectTitle>使用技術</ProjectTitle>
+                    <ul>
+                        <List>採用前端技術 React Hooks</List>
+                        <List>使用 AJAX 連接 RESTful APIs</List>
+                        <List>使用 Scss 預處理器</List>
+                        <List>支援 RWD 響應式網頁</List>
+                        <List>串接 MapBox 第三方 API</List>
+                        <List>採用 React Router 建立路由</List>
+                    </ul>
+                    <ProjectTitle>專案角色</ProjectTitle>
+                    <p>負責全前端開發以及 UI 設計</p>
                 </ProjectSkill>
             </ProjectInro>
         </ProjectWrapper>

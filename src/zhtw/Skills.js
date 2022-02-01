@@ -44,7 +44,7 @@ const Skills = () => {
                     <SkillTitle>前端設計</SkillTitle>
                     <ul>
                         <List>HTML</List>
-                        <List>CSS、SaSS</List>
+                        <List>CSS、Sass、Scss</List>
                         <List>JavaScript ES6</List>
                         <List>RESTful APIs</List>
                         <List>Bootstrap</List>

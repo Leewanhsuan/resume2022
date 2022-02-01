@@ -3,6 +3,7 @@ import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPrint } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import { device } from './zhtw/device';
 
 const Header = () => {
     const NavWrapper = styled.div`

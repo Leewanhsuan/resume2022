@@ -9,15 +9,36 @@ body {
     overflow: scroll;
 }
 
-LINK {
-    color: #333333
+a {
+    color: #333333;
+    margin-left: 10px;
+    text-decoration: none
+}
+
+a:hover {
+    color: #4169e1;
 }
 
 
 h2 {
-    font-size: 24px;
-    margin: 0 0 8px;
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 7px;
+    margin-bottom: 7px;
     font-weight: 500;
+}
+
+h4 {
+    font-size: 16px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-weight: 400;
 }
 
 section {
@@ -31,23 +52,10 @@ P {
 @page {
     size: A4 portrait;
     margin: 0.5cm;
-    orphans: 4;
-    widows: 2;
-
 }
 
 
-
-
 @media print {
-
-    html,
-    body {
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
 
     body {
         width: 100%;
@@ -55,15 +63,6 @@ P {
         float: none;
         line-height: 1.5;
         font-size: 12pt;
-    }
-
-    header nav,
-    footer,
-    video,
-    audio,
-    object,
-    embed {
-        display: none;
     }
 
     h1,
@@ -92,9 +91,5 @@ P {
     ol,
     dl {
         page-break-before: avoid;
-    }
-
-    div.pageBlock {
-        page-break-before: always;
     }
 }

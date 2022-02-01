@@ -17,7 +17,7 @@ const Jobs = () => {
     `;
 
     const List = styled.li`
-        font-size: 14px;
+        font-size: 16px;
         color: #666666;
         margin-bottom: 5px;
     `;

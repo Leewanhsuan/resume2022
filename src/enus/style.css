@@ -1,47 +1,6 @@
-html,
-body {
-    font-family: "Lato, Noto Sans TC", sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333333;
-    background-color: #f6f7f8;
-    height: auto;
-    overflow: scroll;
-}
-
-h2 {
-    font-size: 32px;
-    margin: 24px 0 8px;
-}
-
-h2 {
-    font-size: 24px;
-    margin: 0 0 8px;
-    font-weight: 500;
-}
-
-section {
-    margin-bottom: 48px;
-}
-
-P {
-    color: #666666;
-}
-
-
-a,
-a:visited,
-a:active {
-    font-weight: 400;
-    font-size: 16px;
-    color: #666666;
-    text-decoration: none;
-    outline: none;
-    cursor: pointer;
-    padding-left: 10px;
-}
-
-a:hover {
-    color: #4169e1;
-    cursor: pointer;
+hr {
+    border: 0px;
+    height: 1px;
+    background: #4169e1;
+    margin: 10px 0;
 }

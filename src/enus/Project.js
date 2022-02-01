@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import './style.css';
 import { device } from './device';
 
 const Project = () => {
@@ -47,6 +46,11 @@ const Project = () => {
         }
     `;
 
+    const List = styled.li`
+        margin-bottom: 5px;
+        font-size: 14px;
+    `;
+
     return (
         <ProjectWrapper>
             <h2>程式作品</h2>
@@ -65,10 +69,7 @@ const Project = () => {
                     </p>
                 </ProjectDetail>
                 <ProjectSkill>
-                    <p>
-                        具備網頁設計能力，熟悉
-                        CSS、HTML、Javascript，能完成使用者介面繪製，對於基礎演算法有一定的掌握力。
-                    </p>
+                    具備網頁設計能力，熟悉 CSS、HTML、Javascript，能完成使用者介面繪製，對於基礎演算法有一定的掌握力。
                 </ProjectSkill>
             </ProjectInro>
         </ProjectWrapper>

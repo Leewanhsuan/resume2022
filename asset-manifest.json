@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e17c47b6.css",
+    "main.js": "/static/js/main.8ab26f4e.js",
+    "static/media/FlowerMePhoto.png": "/static/media/FlowerMePhoto.ac2767d235f8b3efd7cc.png",
+    "static/media/photo.png": "/static/media/photo.8b2a0e2e296dad6612a5.png",
+    "index.html": "/index.html",
+    "main.e17c47b6.css.map": "/static/css/main.e17c47b6.css.map",
+    "main.8ab26f4e.js.map": "/static/js/main.8ab26f4e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e17c47b6.css",
+    "static/js/main.8ab26f4e.js"
+  ]
+}

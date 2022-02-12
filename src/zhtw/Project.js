@@ -61,14 +61,14 @@ const Project = () => {
             <ProjectInro>
                 <ProjectDetail>
                     <ProjectTitle>FlowerMe 心花開 電商網站</ProjectTitle>
+                    <Link href="#">完整作品說明</Link>
+                    <Link href="#">網站 Demo</Link>
                     <p>
                         電商前台涵蓋會員、購物、訂單、評論與客服等四大功能，後台則包含會員管理、品類管理、商品管理、訂單管理、消息發布等五大模組。
                     </p>
                     <a href="#">
                         <Image src={require(`./../image/FlowerMePhoto.png`)} alt="" />
                     </a>
-                    <Link href="#">完整作品說明</Link>
-                    <Link href="#">網站 Demo</Link>
                 </ProjectDetail>
                 <ProjectSkill>
                     <ProjectTitle>使用技術</ProjectTitle>

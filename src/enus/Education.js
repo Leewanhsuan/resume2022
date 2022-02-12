@@ -1,37 +1,71 @@
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSchool, faClock } from '@fortawesome/free-solid-svg-icons';
+import './style.css';
+import { device } from './device';
 
 const Education = () => {
     const Major = styled.span`
         color: #666666;
         font-size: 16px;
         margin-right: 20px;
+        @media print ${device.print} {
+            font-size: 14px;
+        }
     `;
 
     const Duration = styled.span`
         color: #666666;
         font-size: 16px;
-        margin-right: 20px;
+        @media print ${device.print} {
+            font-size: 14px;
+        }
     `;
+
+    const Educate = styled.section`
+        display: flex;
+        justify-content: space-between;
+    `;
+
+    const School = styled.div`
+        width: 60%;
+    `;
+
+    const Language = styled.div`
+        width: 30%;
+    `;
+
     return (
-        <div>
-            <section>
+        <Educate>
+            <School>
                 <h2>學歷</h2>
+                <hr />
                 <div>
                     <div>
-                        <h3>國立成功大學</h3>
-                        <Major>規劃與設計學院 創意產業設計所</Major>
-                        <Duration>2020 年 4 月 - 2021 年 10 月</Duration>
+                        <h3>National Cheng Kung University</h3>
+                        <Major>MA, Creative Industries Design</Major>
+                        <Duration>2020.4 - 2021.10</Duration>
                     </div>
                     <div>
-                        <h3>國立臺北教育大學</h3>
-                        <Major>文化創意產業經營系</Major>
-                        <Duration>2020 年 4 月 - 2021 年 10 月</Duration>
+                        <h3>National Taipei University of Education</h3>
+                        <Major>BA, Cultural and Creative Industry Management</Major>
+                        <Duration>2020.4 - 2021.10</Duration>
                     </div>
                 </div>
-            </section>
-        </div>
+            </School>
+            <Language>
+                <h2>Language</h2>
+                <hr />
+                <div>
+                    <div>
+                        <h3>English</h3>
+                        <Major>TOIEC 935分</Major>
+                    </div>
+                    <div>
+                        <h3>Japanese</h3>
+                        <Major>JEPT N4</Major>
+                    </div>
+                </div>
+            </Language>
+        </Educate>
     );
 };
 

@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 import { device } from './device';
+import './style.css';
 
 const Project = () => {
-    const ProjectWrapper = styled.div`
-        padding-top: 20px;
-    `;
+    const ProjectWrapper = styled.div``;
 
     const ProjectInro = styled.div`
         display: flex;
@@ -30,7 +29,6 @@ const Project = () => {
     `;
 
     const ProjectTitle = styled.p`
-        border-top: 1px solid #4169e1;
         padding-top: 16px;
         font-size: 18px;
         color: #4169e1;
@@ -46,6 +44,10 @@ const Project = () => {
         }
     `;
 
+    const Image = styled.img`
+        width: 420px;
+    `;
+
     const List = styled.li`
         margin-bottom: 5px;
         font-size: 14px;
@@ -54,22 +56,34 @@ const Project = () => {
     return (
         <ProjectWrapper>
             <h2>程式作品</h2>
-            <ProjectTitle>FlowerMe 心花開 電商網站</ProjectTitle>
+            <hr />
+
             <ProjectInro>
                 <ProjectDetail>
-                    <Link href="#" className="payment__button">
-                        完整作品集
-                    </Link>
-                    <Link href="#" className="payment__button">
-                        網站 Demo
-                    </Link>
+                    <ProjectTitle>FlowerMe Shopping Web</ProjectTitle>
+                    <Link href="#">Introduction</Link>
+                    <Link href="#">Web Demo</Link>
                     <p>
-                        具備網頁設計能力，熟悉
-                        CSS、HTML、Javascript，能完成使用者介面繪製，對於基礎演算法有一定的掌握力。
+                        An all-in-one eCommerce platform, including membership, shopping, orders, reviews. Backstage
+                        management along with member management, category management, product management, orders
+                        tracking and articles release.
                     </p>
+                    <a href="#">
+                        <Image src={require(`./../image/FlowerMePhoto.png`)} alt="" />
+                    </a>
                 </ProjectDetail>
                 <ProjectSkill>
-                    具備網頁設計能力，熟悉 CSS、HTML、Javascript，能完成使用者介面繪製，對於基礎演算法有一定的掌握力。
+                    <ProjectTitle>Techniques</ProjectTitle>
+                    <ul>
+                        <List>React Hooks</List>
+                        <List>RESTful APIs call through AJAX</List>
+                        <List>CSS preprocessor (Scss)</List>
+                        <List>Responsive layout</List>
+                        <List>MapBox API</List>
+                        <List>React Router</List>
+                    </ul>
+                    <ProjectTitle>Work Division</ProjectTitle>
+                    <p>Responsible for frontend development and UI design</p>
                 </ProjectSkill>
             </ProjectInro>
         </ProjectWrapper>

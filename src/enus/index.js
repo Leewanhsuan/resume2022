@@ -15,10 +15,10 @@ const MainEn = () => {
     return (
         <Main>
             <Personal />
+            <Education />
+            <Jobs />
             <Skills />
             <Project />
-            <Jobs />
-            <Education />
         </Main>
     );
 };

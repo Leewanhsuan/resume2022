@@ -41,7 +41,7 @@ const Skills = () => {
             <hr />
             <SkillAll>
                 <Skill>
-                    <SkillTitle>前端設計</SkillTitle>
+                    <SkillTitle>Technical Skills</SkillTitle>
                     <ul>
                         <List>HTML</List>
                         <List>CSS、Sass、Scss</List>
@@ -52,7 +52,7 @@ const Skills = () => {
                     </ul>
                 </Skill>
                 <Skill>
-                    <SkillTitle>前端技術</SkillTitle>
+                    <SkillTitle></SkillTitle>
                     <ul>
                         <List>React Hooks </List>
                         <List>Redux and React Router</List>
@@ -62,7 +62,7 @@ const Skills = () => {
                     </ul>
                 </Skill>
                 <Skill>
-                    <SkillTitle>開發工具</SkillTitle>
+                    <SkillTitle></SkillTitle>
                     <ul>
                         <List>Git</List>
                         <List>Chrome DevTools</List>
@@ -75,7 +75,7 @@ const Skills = () => {
                     </ul>
                 </Skill>
                 <Skill>
-                    <SkillTitle>行銷設計</SkillTitle>
+                    <SkillTitle>Marketing & Design</SkillTitle>
                     <ul>
                         <List>Google Analytics、Google Search Console </List>
                         <List>Firebase、Google Data Studio</List>

@@ -36,7 +36,7 @@ const Education = () => {
     return (
         <Educate>
             <School>
-                <h2>學歷</h2>
+                <h2>Education</h2>
                 <hr />
                 <div>
                     <div>

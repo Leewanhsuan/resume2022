@@ -55,7 +55,7 @@ const Project = () => {
 
     return (
         <ProjectWrapper>
-            <h2>程式作品</h2>
+            <h2>Web Projects</h2>
             <hr />
 
             <ProjectInro>

@@ -57,7 +57,6 @@ const Project = () => {
         <ProjectWrapper>
             <h2>程式作品</h2>
             <hr />
-
             <ProjectInro>
                 <ProjectDetail>
                     <ProjectTitle>FlowerMe 心花開 電商網站</ProjectTitle>
@@ -67,21 +66,47 @@ const Project = () => {
                         電商前台涵蓋會員、購物、訂單、評論與客服等四大功能，後台則包含會員管理、品類管理、商品管理、訂單管理、消息發布等五大模組。
                     </p>
                     <a href="#">
-                        <Image src={require(`./../image/FlowerMePhoto.png`)} alt="" />
+                        <Image src={require(`./../image/FlowerMePhoto.png`)} alt="心花開電商平台" />
                     </a>
                 </ProjectDetail>
                 <ProjectSkill>
                     <ProjectTitle>使用技術</ProjectTitle>
                     <ul>
                         <List>採用前端技術 React Hooks</List>
-                        <List>使用 AJAX 連接 RESTful APIs</List>
+                        <List>串接 RESTful APIs</List>
                         <List>使用 Scss 預處理器</List>
                         <List>支援 RWD 響應式網頁</List>
                         <List>串接 MapBox 第三方 API</List>
                         <List>採用 React Router 建立路由</List>
                     </ul>
                     <ProjectTitle>專案角色</ProjectTitle>
-                    <p>負責全前端開發以及 UI 設計</p>
+                    <p>負責網站內容規劃、架構設計、前端開發以及 UI 設計</p>
+                </ProjectSkill>
+            </ProjectInro>
+            <ProjectInro>
+                <ProjectDetail>
+                    <ProjectTitle>Lulu 嚕路自行車景點平台</ProjectTitle>
+                    <Link href="#">完整作品說明</Link>
+                    <Link href="#">網站 Demo</Link>
+                    <p>
+                        嚕路是自行車景點平台，包含定位與附近自行車車站、自行車道、車道周邊自行車站、車道周邊景點等四大功能。
+                    </p>
+                    <a href="#">
+                        <Image src={require(`./../image/LuluPhoto.png`)} alt="嚕路自行車平台" />
+                    </a>
+                </ProjectDetail>
+                <ProjectSkill>
+                    <ProjectTitle>使用技術</ProjectTitle>
+                    <ul>
+                        <List>採用前端技術 React Hooks</List>
+                        <List>串接交通部 TPX 第三方 API</List>
+                        <List>使用 Style-components 撰寫 CSS 樣式</List>
+                        <List>支援 RWD 響應式網頁</List>
+                        <List>採用 react-map-gl 地圖功能</List>
+                        <List>採用 React Router 建立路由</List>
+                    </ul>
+                    <ProjectTitle>專案角色</ProjectTitle>
+                    <p>負責網站內容規劃、架構設計、前端開發</p>
                 </ProjectSkill>
             </ProjectInro>
         </ProjectWrapper>

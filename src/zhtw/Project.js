@@ -8,6 +8,7 @@ const Project = () => {
     const ProjectInro = styled.div`
         display: flex;
         justify-content: space-between;
+
         @media ${device.mobile} {
             flex-wrap: wrap;
         }
@@ -31,8 +32,12 @@ const Project = () => {
 
     const ProjectSkill = styled.div`
         width: 30%;
+
         @media ${device.print} {
             width: 30%;
+        }
+        @media ${device.mobile} {
+            width: 100%;
         }
     `;
 
@@ -40,6 +45,7 @@ const Project = () => {
         padding-top: 16px;
         font-size: 18px;
         color: #4169e1;
+
         @media print ${device.print} {
             font-size: 16px;
         }

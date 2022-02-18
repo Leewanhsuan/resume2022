@@ -60,14 +60,12 @@ const Project = () => {
             <ProjectInro>
                 <ProjectDetail>
                     <ProjectTitle>FlowerMe 心花開 電商網站</ProjectTitle>
-                    <Link href="#">完整作品說明</Link>
-                    <Link href="#">網站 Demo</Link>
+                    {/* <Link href="#">完整作品說明</Link>
+                    <Link href="#">網站 Demo</Link> */}
                     <p>
                         電商前台涵蓋會員、購物、訂單、評論與客服等四大功能，後台則包含會員管理、品類管理、商品管理、訂單管理、消息發布等五大模組。
                     </p>
-                    <a href="#">
-                        <Image src={require(`./../image/FlowerMePhoto.png`)} alt="心花開電商平台" />
-                    </a>
+                    <Image src={require(`./../image/FlowerMePhoto.png`)} alt="心花開電商平台" />
                 </ProjectDetail>
                 <ProjectSkill>
                     <ProjectTitle>使用技術</ProjectTitle>
@@ -83,17 +81,16 @@ const Project = () => {
                     <p>負責網站內容規劃、架構設計、前端開發以及 UI 設計</p>
                 </ProjectSkill>
             </ProjectInro>
+            <hr />
             <ProjectInro>
                 <ProjectDetail>
                     <ProjectTitle>Lulu 嚕路自行車景點平台</ProjectTitle>
-                    <Link href="#">完整作品說明</Link>
-                    <Link href="#">網站 Demo</Link>
+                    {/* <Link href="#">完整作品說明</Link>
+                    <Link href="#">網站 Demo</Link> */}
                     <p>
                         嚕路是自行車景點平台，包含定位與附近自行車車站、自行車道、車道周邊自行車站、車道周邊景點等四大功能。
                     </p>
-                    <a href="#">
-                        <Image src={require(`./../image/LuluPhoto.png`)} alt="嚕路自行車平台" />
-                    </a>
+                    <Image src={require(`./../image/LuluPhoto.png`)} alt="嚕路自行車平台" />
                 </ProjectDetail>
                 <ProjectSkill>
                     <ProjectTitle>使用技術</ProjectTitle>

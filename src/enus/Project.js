@@ -57,7 +57,6 @@ const Project = () => {
         <ProjectWrapper>
             <h2>Web Projects</h2>
             <hr />
-
             <ProjectInro>
                 <ProjectDetail>
                     <ProjectTitle>FlowerMe Shopping Web</ProjectTitle>
@@ -68,9 +67,7 @@ const Project = () => {
                         management along with member management, category management, product management, orders
                         tracking and articles release.
                     </p>
-                    <a href="#">
-                        <Image src={require(`./../image/FlowerMePhoto.png`)} alt="" />
-                    </a>
+                    <Image src={require(`./../image/FlowerMePhoto.png`)} alt="" />
                 </ProjectDetail>
                 <ProjectSkill>
                     <ProjectTitle>Techniques</ProjectTitle>
@@ -83,7 +80,33 @@ const Project = () => {
                         <List>React Router</List>
                     </ul>
                     <ProjectTitle>Work Division</ProjectTitle>
-                    <p>Responsible for frontend development and UI design</p>
+                    <p>Responsible for Website Architecture, frontend development and UI design</p>
+                </ProjectSkill>
+            </ProjectInro>
+            <hr />
+            <ProjectInro>
+                <ProjectDetail>
+                    <ProjectTitle>Lulu Cycle Route platform</ProjectTitle>
+                    {/* <Link href="#">完整作品說明</Link>
+                    <Link href="#">網站 Demo</Link> */}
+                    <p>
+                        A Cycle Route and Station Searching Platform, along with "nearby U-bike Stations Information and
+                        Scenic Spots."
+                    </p>
+                    <Image src={require(`./../image/LuluPhoto.png`)} alt="嚕路自行車平台" />
+                </ProjectDetail>
+                <ProjectSkill>
+                    <ProjectTitle>Techniques</ProjectTitle>
+                    <ul>
+                        <List>React Hooks</List>
+                        <List>MOTC Transport API</List>
+                        <List>Style-components for CSS</List>
+                        <List>Responsive layout</List>
+                        <List>react-map-gl</List>
+                        <List>React Redux</List>
+                    </ul>
+                    <ProjectTitle>Work Division</ProjectTitle>
+                    <p>Responsible for Website Architecture and frontend development</p>
                 </ProjectSkill>
             </ProjectInro>
         </ProjectWrapper>

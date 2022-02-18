@@ -60,8 +60,8 @@ const Project = () => {
             <ProjectInro>
                 <ProjectDetail>
                     <ProjectTitle>FlowerMe Shopping Web</ProjectTitle>
-                    <Link href="#">Introduction</Link>
-                    <Link href="#">Web Demo</Link>
+                    {/* <Link href="#">Introduction</Link>
+                    <Link href="#">Web Demo</Link> */}
                     <p>
                         An all-in-one eCommerce platform, including membership, shopping, orders, reviews. Backstage
                         management along with member management, category management, product management, orders

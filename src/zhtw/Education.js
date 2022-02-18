@@ -23,6 +23,9 @@ const Education = () => {
     const Educate = styled.section`
         display: flex;
         justify-content: space-between;
+        @media print ${device.print} {
+            font-size: 14px;
+        }
     `;
 
     const School = styled.div`

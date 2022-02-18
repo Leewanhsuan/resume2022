@@ -10,6 +10,9 @@ const Header = () => {
         height: 60px;
         color: #666666;
         box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+        @media print ${device.print} {
+            display: none;
+        }
     `;
 
     const Nav = styled.div`

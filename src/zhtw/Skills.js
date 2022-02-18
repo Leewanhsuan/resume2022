@@ -18,7 +18,8 @@ const Skills = () => {
         width: 25%;
 
         @media print ${device.print} {
-            width: 40px;
+            width: 25%;
+            font-size: 12px;
         }
 
         @media ${device.mobile} {
@@ -28,11 +29,20 @@ const Skills = () => {
 
     const SkillTitle = styled.h3`
         padding-top: 16px;
+
+        @media print ${device.print} {
+            font-size: 14px;
+            padding-top: 5px;
+        }
     `;
 
     const List = styled.li`
         margin-bottom: 5px;
         font-size: 14px;
+        @media print ${device.print} {
+            margin-bottom: 0px;
+            font-size: 12px;
+        }
     `;
 
     return (
@@ -57,7 +67,7 @@ const Skills = () => {
                         <List>React Hooks </List>
                         <List>Redux and React Router</List>
                         <List>RESTful APIs</List>
-                        <List>JEST Unit Test</List>
+                        <List>Cypress E2E testing</List>
                         <List>Map</List>
                     </ul>
                 </Skill>

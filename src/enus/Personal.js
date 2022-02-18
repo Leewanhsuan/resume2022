@@ -30,7 +30,7 @@ const Personal = () => {
         @media print ${device.print} {
             text-align: start;
             margin: 0;
-            font-size: 22px;
+            font-size: 20px;
         }
     `;
 
@@ -71,7 +71,7 @@ const Personal = () => {
         margin-bottom: 20px;
         font-size: 16px;
         @media print ${device.print} {
-            font-size: 14px;
+            display: none;
         }
     `;
 

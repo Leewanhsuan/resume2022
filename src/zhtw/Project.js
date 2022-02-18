@@ -11,6 +11,10 @@ const Project = () => {
         @media ${device.mobile} {
             flex-wrap: wrap;
         }
+
+        @media print ${device.print} {
+            font-size: 12px;
+        }
     `;
 
     const ProjectDetail = styled.div`
@@ -19,12 +23,16 @@ const Project = () => {
         @media ${device.mobile} {
             width: 100%;
         }
+
+        @media print ${device.print} {
+            font-size: 12px;
+        }
     `;
 
     const ProjectSkill = styled.div`
         width: 30%;
-        @media ${device.mobile} {
-            width: 100%;
+        @media ${device.print} {
+            width: 30%;
         }
     `;
 
@@ -32,6 +40,9 @@ const Project = () => {
         padding-top: 16px;
         font-size: 18px;
         color: #4169e1;
+        @media print ${device.print} {
+            font-size: 16px;
+        }
     `;
 
     const Link = styled.button`
@@ -46,11 +57,17 @@ const Project = () => {
 
     const Image = styled.img`
         width: 420px;
+        @media print ${device.print} {
+            width: 350px;
+        }
     `;
 
     const List = styled.li`
         margin-bottom: 5px;
         font-size: 14px;
+        @media print ${device.print} {
+            font-size: 12px;
+        }
     `;
 
     return (

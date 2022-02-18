@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import './style.css';
+import { device } from './device';
 
 const Jobs = () => {
     const JobWrapper = styled.div``;
@@ -8,18 +9,30 @@ const Jobs = () => {
         color: #4169e1;
         font-size: 16px;
         margin-right: 20px;
+
+        @media print ${device.print} {
+            font-size: 14px;
+        }
     `;
 
     const Duration = styled.span`
         color: #666666;
         font-size: 16px;
         margin-right: 20px;
+
+        @media print ${device.print} {
+            font-size: 12px;
+        }
     `;
 
     const List = styled.li`
         font-size: 16px;
         color: #666666;
         margin-bottom: 5px;
+
+        @media print ${device.print} {
+            font-size: 14px;
+        }
     `;
 
     return (

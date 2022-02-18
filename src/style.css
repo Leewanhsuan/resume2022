@@ -75,9 +75,7 @@ P {
         page-break-inside: avoid
     }
 
-    h1+p,
-    h2+p,
-    h3+p {
+    p {
         page-break-before: avoid;
     }
 
@@ -85,6 +83,10 @@ P {
         page-break-after: avoid;
         page-break-inside: avoid;
         max-width: 100%;
+    }
+
+    div{
+        page-break-inside: avoid;
     }
 
     ul,

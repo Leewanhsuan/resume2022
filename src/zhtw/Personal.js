@@ -30,7 +30,7 @@ const Personal = () => {
         @media print ${device.print} {
             text-align: start;
             margin: 0;
-            font-size: 22px;
+            font-size: 20px;
         }
     `;
 
@@ -42,7 +42,7 @@ const Personal = () => {
         color: #4169e1;
         @media print ${device.print} {
             text-align: start;
-            font-size: 14px;
+            font-size: 12px;
             margin-bottom: 0px;
         }
     `;
@@ -63,7 +63,7 @@ const Personal = () => {
         display: inline-block;
         @media print ${device.print} {
             text-align: start;
-            font-size: 14px;
+            font-size: 12px;
         }
     `;
 

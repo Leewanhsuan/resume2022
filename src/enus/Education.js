@@ -42,12 +42,12 @@ const Education = () => {
                     <div>
                         <h3>National Cheng Kung University</h3>
                         <Major>MA, Creative Industries Design</Major>
-                        <Duration>2020.4 - 2021.10</Duration>
+                        <Duration>2018.6</Duration>
                     </div>
                     <div>
                         <h3>National Taipei University of Education</h3>
                         <Major>BA, Cultural and Creative Industry Management</Major>
-                        <Duration>2020.4 - 2021.10</Duration>
+                        <Duration>2016.6</Duration>
                     </div>
                 </div>
             </School>

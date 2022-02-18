@@ -42,12 +42,12 @@ const Education = () => {
                     <div>
                         <h3>國立成功大學</h3>
                         <Major>規劃與設計學院 創意產業設計所</Major>
-                        <Duration>2020.4 - 2021.10</Duration>
+                        <Duration>2018.6</Duration>
                     </div>
                     <div>
                         <h3>國立臺北教育大學</h3>
                         <Major>文化創意產業經營系</Major>
-                        <Duration>2020.4 - 2021.10</Duration>
+                        <Duration>2016.6</Duration>
                     </div>
                 </div>
             </School>
